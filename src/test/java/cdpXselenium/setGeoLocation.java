@@ -23,7 +23,7 @@ public class setGeoLocation {
 		devtools.send(
 				Emulation.setGeolocationOverride(Optional.of(latitude), Optional.of(longitude), Optional.of(accuracy)));
 
-		driver.get("http://google.com");
+		driver.get("https://google.com");
 		driver.findElement(By.xpath("//textarea[@title='Search']")).sendKeys("netflix", Keys.ENTER);
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[@class='byrV5b']")).click();
